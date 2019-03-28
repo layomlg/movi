@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 78">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-next);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #013e98;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+    </style>
+    <clipPath id="clip-next">
+      <rect width="46" height="78"/>
+    </clipPath>
+  </defs>
+  <g id="next" class="cls-1">
+    <path id="Path_7907" data-name="Path 7907" class="cls-2" d="M0,0,34.928,33.4,58.577,10.785,69.855,0" transform="translate(6.5 74.355) rotate(-90)"/>
+  </g>
+</svg>

@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- BOOTSTRAP Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.4.1.css">
+  <!--General CSS-->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/custom-pelayo.css">
+  <style>
+    div.contenedor{
+      margin-top: 92px;
+      background-image: url("../assets/img/rapport.png");
+      background-repeat: repeat-y;
+      
+      height: auto;
+      overflow:hidden;
+    }
+  </style>
+</head>
+
+<body class="body page-index clearfix">
+  <nav class="navbar navbar-expand navbar-dark fixed-top primera">
+    <div class="navbar navbar-expand-md">
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-sm fixed-top segunda">
+    <div class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#"><img src="./assets/img/logos_cnv.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <a id="buttontop"></a>
+
+  <div class="contenedor">
+
+    <!--Seccion 1-->
+    <div class="elemento clearfix">
+      <!--********** Inicio Login **********-->
+      <div class="logo-prealta">
+        <img style="width:80%;" src="./assets/img/logos_cnv.png"><br><br>
+      </div>
+
+      <!--Inicio Prealta-->
+      <div class="prealta">
+        <p class="color-blue1 font10" style="font-weight: 600;">INGRESA TUS DATOS</p><br>
+
+        <!--Inicio Form-->
+        <div class="col-md-12">
+          <div class="row">
+            <div class="row form-group-1">
+              <!--Nombre Completo-->
+              <div class="col-md-6 col-sm-6">
+                <label>Nombre Completo*</label>
+                <input name="txtnombre" type="text" autocomplete="off" maxlength="80" id="txtnombre" class="form-control" placeholder="Nombre Completo" onkeypress="return ValidaKeyAlfanumerico(event);">
+              </div>
+              <!--GPID-->
+              <div class="col-md-3 col-sm-3">
+                <label>GPID *</label>
+                <input name="txtnomina" type="text" autocomplete="off" maxlength="8" id="txtnomina" class="form-control" placeholder="8 dígitos" onkeypress="return ValidaKeyNumero(event);">
+              </div>
+              <!--Fecha de Nacimiento-->
+              <div class="col-md-3 col-sm-3">
+                <label>Fecha de Nacimiento *</label>
+                <input name="txtfechanac" type="text" readonly="readonly" id="txtfechanac" class="form-control datepicker" data-format="dd/mm/yyyy" data-lang="en" data-rtl="false" placeholder="dd/mm/aaaa" onkeypress="return ValidaKeyNumeroY(event);">
+              </div>
+              
+              <div class="row">
+                <br>
+                <p class="font9">* Debemos de contar con alguno de estos dos datos (Email ó Teléfono) ya que será la forma en la que te comunicaremos que has sido dado de alta para poder ingresar al portal.</p>
+                <br>
+              </div>
+              
+              <div class="row form-group-1">
+                <!--E-mail-->
+                <div class="col-md-8 col-sm-8">
+                  <label>E-mail</label>
+                  <input name="txtemail" type="text" autocomplete="off" maxlength="100" id="txtemail" class="form-control" placeholder="Email" onkeypress="return ValidaKeyAlfanumericoEmail(event);">
+                </div>
+                <!--Teléfono-->
+                <div class="col-md-4 col-sm-4">
+                    <label>Teléfono </label>
+                    <input name="txttelefono" type="text" autocomplete="off" maxlength="14" id="txttelefono" class="form-control" placeholder="Teléfono" onkeypress="return ValidaKeyNumero(event);">
+                </div>
+              </div>
+              
+         
+                <div class="row form-group-1">
+                  <div class="col-md-4 col-sm-4">
+                    <label>Canal *</label>
+                    <select name="ddlcanal" id="ddlcanal">
+                      <option value="DETALLE">DETALLE</option>
+                      <option value="MAYOREO">MAYOREO</option>
+                      <option value="AUTOSERVICIOS">AUTOSERVICIOS</option>
+                      <option value="CSTORES">CSTORES</option>
+                    </select>
+                  </div>
+                  
+                  <div class="col-md-8 col-sm-8">
+                    <label>Puesto *</label>
+                    <select name="ddlpuesto" id="ddlpuesto">
+                      <option value="ADMINISTRATIVO DTS">ADMINISTRATIVO DTS</option>
+                      <option value="CHOFER AUTOSERVICIOS">CHOFER AUTOSERVICIOS</option>
+                      <option value="CONTACTO CNV">CONTACTO CNV</option>
+                      <option value="CONTACTO CNV DTS">CONTACTO CNV DTS</option>
+                      <option value="COORD./GTE JR">COORD./GTE JR</option>
+                      <option value="COORDINADOR DE VENTAS DTS">COORDINADOR DE VENTAS DTS</option>
+                      <option value="COORDINADOR GTM">COORDINADOR GTM</option>
+                      <option value="COORDINADOR ONE TEAM">COORDINADOR ONE TEAM</option>
+                      <option value="COORDINADOR PERFORMANCE DTS">COORDINADOR PERFORMANCE DTS</option>
+                      <option value="COORDINADOR TOSTITOS">COORDINADOR TOSTITOS</option>
+                      <option value="DESARROLLADOR DTS">DESARROLLADOR DTS</option>
+                      <option value="EJECUTIVO AUTOSERVICIO">EJECUTIVO AUTOSERVICIO</option>
+                      <option value="EJECUTIVO CSTORES">EJECUTIVO CSTORES</option>
+                      <option value="EJECUTIVO DE VENTAS MAYOREO">EJECUTIVO DE VENTAS MAYOREO</option>
+                      <option value="EQUIPO DE APOYO ANUAL">EQUIPO DE APOYO ANUAL</option>
+                      <option value="GERENTE DE VENTAS MAYOREO">GERENTE DE VENTAS MAYOREO</option>
+                      <option value="GERENTE DE VENTAS NT">GERENTE DE VENTAS NT</option>
+                      <option value="GERENTE DIVISIONAL DTS">GERENTE DIVISIONAL DTS</option>
+                      <option value="GERENTE DIVISIONAL GROUPER DTS">GERENTE DIVISIONAL GROUPER DTS</option>
+                      <option value="GERENTE REGIONAL DTS">GERENTE REGIONAL DTS</option>
+                      <option value="GERENTE SR">GERENTE SR</option>
+                      <option value="INGENIERO DE RUTA">INGENIERO DE RUTA</option>
+                      <option value="INHOUSE">INHOUSE</option>
+                      <option value="JDV AUTOSERVICIO">JDV AUTOSERVICIO</option>
+                      <option value="JDV DTS">JDV DTS</option>
+                      <option value="JDV MAYOREO">JDV MAYOREO</option>
+                      <option value="KAE">KAE</option>
+                      <option value="KAM AUTOSERVICIOS">KAM AUTOSERVICIOS</option>
+                      <option value="KAM CSTORES">KAM CSTORES</option>
+                      <option value="KAM JR">KAM JR</option>
+                      <option value="KAM MAYOREO">KAM MAYOREO</option>
+                      <option value="KAM NT">KAM NT</option>
+                      <option value="PROMOTOR AUTOSERVICIO">PROMOTOR AUTOSERVICIO</option>
+                      <option value="PROMOTOR DE VENTAS MAYOREO">PROMOTOR DE VENTAS MAYOREO</option>
+                      <option value="SUPERVISOR DTS">SUPERVISOR DTS</option>
+                      <option value="VENDEDOR CSTORES">VENDEDOR CSTORES</option>
+                      <option value="VENDEDOR DTS">VENDEDOR DTS</option>
+                    </select>
+                  </div>
+              </div>
+                  
+              <div class="row form-group-1">
+                <div class="col-md-4 col-sm-4">
+                  <label>Unidad Negocio CeDis *</label>
+                  <select name="ddlunidadnegodio" id="ddlunidadnegodio">
+                    <option value="PMF">PMF</option>
+                    <option value="GAMESA/QUAKER">GAMESA/QUAKER</option>
+                    <option value="SABRITAS-SONRIC'S">SABRITAS-SONRIC'S</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <label>Región *</label>
+                  <select name="ddlregion" onchange="javascript:setTimeout('__doPostBack(\'ddlregion\',\'\')', 0)" id="ddlregion">
+                    <option selected="selected" value="0"> -- Selecciona -- </option>
+                    <option value="CENTRO">CENTRO</option>
+                    <option value="NOROESTE">NOROESTE</option>
+                    <option value="NORTE">NORTE</option>
+                    <option value="OCCIDENTE">OCCIDENTE</option>
+                    <option value="SURESTE">SURESTE</option>
+                    <option value="VALLE DE MÉXICO">VALLE DE MÉXICO</option>
+                  </select>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <label>No de CeDis *</label>
+                  <img src="assets/ajax-loader.gif" class="form-control largs loading" style="display: none;" id="imglddlcedis">
+                  <select name="ddlcedis" id="ddlcedis">
+                    <option value="0"> -- Selecciona Región -- </option>
+                  </select>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <!--Fin Form-->
+        <button class="boton-blue1">Guardar</button>
+      </div>
+      <!--Fin Prealta-->
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="img-inline"><img src="./assets/img/logo-pepsico-blanco.png">
+          <p>Nos ponemos en contacto contigo de la forma que tu elijas</p>
+        </div>
+        <p>Horarios de atención a clientes lunes a viernes de 8am a 8pm</p>
+      </div>
+      <div class="col-sm-3">
+        <a href="http://www.circulodehonorpepsico.com">www.circulodehonorpepsico.com</a>
+      </div>
+      <div class="col-sm-3">
+        <p>Int. de la República - <a href="tel:018002867183">01 800 286 7183</a>
+          CDMX - <a href="tel:12502338">1250 2338</a></p>
+      </div>
+      <div class="col-sm-3">
+        <a href="mail:contacto@circulodehonorpepsico.com">contacto@circulodehonorpepsico.com</a>
+      </div>
+      <div class="col-sm-3">
+        <p>Kiosco - CEDIS</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="assets/plugins/bootstrap.datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/popper.min.1.14.0.js"></script>
+  <script src="./js/bootstrap.min.4.1.js"></script>
+
+  <!-- ****************************************** -->
+
+</body>
+
+</html>
