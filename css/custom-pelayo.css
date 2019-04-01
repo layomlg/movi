@@ -26,13 +26,13 @@ nav.bg-pepsi{
 
 }
 nav.primera{
-  background: rgba(27,104,185,1);
+  background: #017EA7;
   height: 36px;
 }
 nav.segunda{
   top: 36px;
   height: 56px;
-  background: rgba(0,76,155,1);
+  background: #01A9E0;
 }
 nav > div{
   width: 100%;
@@ -64,11 +64,20 @@ color: #fff;
 
 .navbar-brand{
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
+  left: 0px;
+}
+.segunda .navbar-brand{
+  position: absolute;
+  bottom: 6px;
   left: 0px;
 }
 .navbar-brand > img{
-  height: 72px;
+  height: 30px;
+  bottom: 0px;
+}
+.segunda .navbar-brand > img{
+  height: 35px;
   bottom: 0px;
 }
 div.contenedor{
@@ -83,6 +92,7 @@ div.footer{
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
+  padding: 20px 0px;
 }
 div.footer a{
   color: #ffffff;
@@ -96,7 +106,8 @@ div.footer a:hover{
 }
 .img-inline img{
   display: inline-block;
-  width: 200px;
+  width: auto;
+  height: 40px;
 }
 .img-inline p{
   display: inline-block;
@@ -129,7 +140,7 @@ ul.secundario > li{
 ul.badges > li{
   border: 0px none !important;
   padding-top: 11px;
-  
+
 }
 ul.badges a{
   position: relative;  
@@ -141,7 +152,7 @@ ul.badges img{
 }
 ul.badges span{
   height: auto;
-  background: #EC297B;
+  background: #5BC500;
   width: 15px;
   height: 15px;
   display: block;
@@ -340,7 +351,7 @@ ul.secundario li:hover > p{
 /*********************Filtros, barra busqueda************************/
 
 .filtro{
-  background: #1B68B9;
+  background: #9F439C;
   color: #ffffff;
   padding: 0px;
   margin: 0px auto;
@@ -512,8 +523,8 @@ ul li p.dropdown-titulo{
 }
 @media (min-width: 768px){
   .dropdown-menu perfil-f{
- left: -80px;
-}
+    left: -80px;
+  }
 
 }
 .dropdown-menu.catalogo-f .tarjeta-producto{
@@ -570,3 +581,22 @@ ul li p.dropdown-titulo{
 .cat-link.disable .mask{
   display: block;
 }
+.progress-bar{
+  background-color:#FF9800; 
+}
+
+.carousel-indicators li{
+  background-color: rgba(0, 171, 230,0.33);
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+}
+.carousel-indicators .active {
+  background-color: #00ABE6;
+}
+.progreso{
+  width: 100%;
+  height: auto;
+}
+
+
