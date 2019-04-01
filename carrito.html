@@ -152,9 +152,6 @@
             <li class="nav-item">
               <a class="nav-link" href="./progreso.html">Journey</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comunidad</a>
-            </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0 buscador">
             <input class="form-control mr-sm-2" type="text" placeholder="Buscar un producto" aria-label="Search">
@@ -168,7 +165,7 @@
               <a class="nav-link" href="#"><img src="./assets/img/svg/bell.svg"><span>2</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="./assets/img/svg/cart.svg"><span>3</span></a>
+              <a class="nav-link" href="./carrito.html"><img src="./assets/img/svg/cart.svg"><span>3</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="perfil-f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -177,7 +174,6 @@
               <div class="dropdown-menu perfil-f" aria-labelledby="perfil-f">
                 <a class="dropdown-item" href="#"><img src="./assets/img/svg/avances.svg">Avances</a>
                 <a class="dropdown-item" href="#"><img src="./assets/img/svg/microobjetivos.svg">Mis micro objetivos</a>
-                <a class="dropdown-item" href="#"><img src="./assets/img/svg/ranking.svg">Ranking</a>
                 <a class="dropdown-item" href="#"><img src="./assets/img/svg/pedidos.svg">Mis Pedidos</a>
                 <a class="dropdown-item" href="./login.html"><img src="./assets/img/svg/cerrar.svg">Cerrar sesión</a>
               </div>
@@ -217,10 +213,10 @@
                 <p class="hide">Tu porcentaje de venta</p>
                 <div class="pb-container">
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                     </div>
                   </div>
-                  <label style="left: 20%">20%</label>
+                  <label style="left: 50%">50%</label>
                 </div>
               </div>
               <p class="name hide">Micro objetivos <img class="coin" src="./assets/img/svg/coin.svg"> 10</p>
@@ -274,12 +270,33 @@
     <div class="contenedor">
       <div>
         <div class="w-1200">
-          <div class="breadcrumbs"><a>Inicio</a><span class="separador"></span><a>Carrito</a></div>
+          <div class="breadcrumbs"><a href="./home.html">Inicio</a><span class="separador"></span><a>Carrito</a></div>
         </div>
       </div>
       <!--Inicio Carousel Productos-->
       <div class="elemento w-1200 clearfix">
+        <div class="steps">
+          <div class="step1">
+            <div class="row">
+              <div class="col-sm-8"><img src="./assets/img/carrito/c-1-1.png" alt=""></div>
+              <div  id="a1" class="col-sm-4"><img src="./assets/img/carrito/c-1-2.png" alt=""></div>
+            </div>
+          </div>
+          <div class="step2">
+            <div class="row">
+              <div id="a2" class="col-sm-4"><img src="./assets/img/carrito/c-2-1.png" alt=""></div>
+              <div id="a3" class="col-sm-4"><img src="./assets/img/carrito/c-2-2.png" alt=""></div>
+              <div id="a4" class="col-sm-4"><img src="./assets/img/carrito/c-2-3.png" alt=""></div>
+            </div>
+          </div>
+          <div class="step3">
+            <div class="row">
+              <div class="col-sm-8"><img src="./assets/img/carrito/c-3-1.png" alt=""></div>
+              <div onclick="location.href='confirmacion.html'" class="col-sm-4"><img src="./assets/img/carrito/c-3-2.png" alt=""></div>
+            </div>         
+          </div>
 
+        </div>
 
       </div>
       <!--Fin Carousel Productos-->
@@ -379,6 +396,8 @@
       </div>
 
 
+
+
     </div>
     <!--Fin Contenedor-->
 
@@ -412,6 +431,17 @@
 
     <!-- ****************************************** -->
     <script src="./js/general.js"></script>
+    <script>
+      $("#a1").click(function(){
+      $("div.step1").css("display","none");
+      $("div.step2").css("display","block");
+    });
+    $("#a2, #a3, #a4").click(function(){
+      $("div.step2").css("display","none");
+      $("div.step3").css("display","block");
+    });
+
+    </script>
 
 
   </body>

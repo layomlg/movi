@@ -84,6 +84,7 @@ div.contenedor{
   top: 0px;
   margin-top: 435px;
   min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 505px);
   position: relative:
 }
 div.footer{
@@ -599,4 +600,25 @@ ul li p.dropdown-titulo{
   height: auto;
 }
 
+.steps img{
+  width: 100%;
+}
+.step1,
+.step2,
+.step3{
+  display: none;
+}
+.step1{
+  display: block;
+}
 
+.titulo-c{
+  font-size: 24px;
+}
+.cuerpo-c{
+  font-size: 16px;
+}
+.cuerpo-c span{
+  font-size: 16px;
+  font-weight: bold;
+}
