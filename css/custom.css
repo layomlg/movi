@@ -670,7 +670,7 @@ label.container .checkbutton:after {
   pointer-events: auto;
   background-image: url(../assets/img/bg-modal.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: .3rem;
   outline: 0;
@@ -678,24 +678,23 @@ label.container .checkbutton:after {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 60%;
+    max-width: 50%;
     margin: 1.75rem auto;
   }
 }
 
 button.boton-modal-white {
-  background-color: transparent;
-  color: white;
+  background-color: #17C900;
+  color: #fff;
+  border: 0px none;
   font-size: 1.2rem;
   border-radius: 20px;
-  margin: 20px 0px 20px 0px;
+  margin: 45px 0px 20px 0px;
   width: 70%;
   height: 40px;
 }
 
 button.boton-modal-white:hover {
-  background-color: white;
-  color: #013E98;
 }
 
 .checked {
@@ -714,4 +713,7 @@ button.boton-modal-white:hover {
   right: 10px;
   color: #F7B132 !important;
   display: none;
+}
+.modal-body {
+    padding: 60px;
 }
